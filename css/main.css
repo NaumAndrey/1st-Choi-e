@@ -1,0 +1,708 @@
+@font-face {
+	font-family: "TT Commons";
+	src: local("TT Commons Bold"), local("TTCommons-Bold"), url("../font/TTCommons-Bold.woff2") format("woff2"), url("../font/TTCommons-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "TT Commons";
+	src: local("TT Commons Regular"), local("TTCommons-Regular"), url("../font/TTCommons-Regular.woff2") format("woff2"), url("../font/TTCommons-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*Reset*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: "TT Commons";
+	font-style: normal;
+	font-weight: normal;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	line-height: 1;
+	overflow-x: hidden;
+	position: relative;
+	/* background-image: url(../images/heart.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x:  -25%; */
+}
+
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+/* .media{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+} */
+
+/* Плавный скролл */
+html {
+	scroll-behavior: smooth;
+}
+
+/*Section #1*/
+
+/* body */
+body {
+	background-image: url("/images/heart.svg");
+	background-position: center -100px;
+	background-repeat: no-repeat;
+	background-size: 1200px;
+}
+
+@media screen and (max-width: 1179px) {
+	body {
+		background-position: center -200px;
+		background-size: 800px;
+	}
+}
+
+/* end body */
+
+.container {
+	width: 100%;
+	max-width: 1580px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.head {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 60px;
+}
+
+.head img {
+	width: 200px;
+}
+
+.head a {
+	font-family: TT Commons;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 24px;
+	text-decoration: none;
+	margin-left: 50px;
+	color: #000;
+}
+
+/* Section 1 */
+
+.sec-1 {
+	width: 100%;
+}
+
+.sec-1-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sec-1-content div {
+	width: 100%;
+	max-width: 750px;
+	margin: 0 auto;
+}
+
+.sec-1-img {
+	display: flex;
+	justify-content: center;
+}
+
+.sec-1-content img {
+	width: 100%;
+	max-width: 480px;
+}
+
+.sec-1-content h1 {
+	font-size: 95px;
+	text-align: center;
+	padding-bottom: 60px;
+	font-weight: bold;
+}
+
+.sec-1-content p {
+	font-size: 48px;
+	text-align: center;
+}
+
+.reg-btn {
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 60px;
+}
+
+.reg-btn button {
+	width: 100%;
+	max-width: 500px;
+	height: 80px;
+	background-color: #d70e29;
+	border-radius: 50px;
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+/* Section 2 */
+
+.sec-2 {
+	padding-top: 160px;
+}
+
+.sec-2 img {
+	width: 100%;
+	max-width: 1122px;
+}
+
+.sec-2-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sec-2 h1 {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 48px;
+}
+
+.sec-2-text {
+	width: 100%;
+	max-width: 500px;
+	display: flex;
+	align-items: center;
+	padding-top: 30px;
+}
+
+.sec-2-text div {
+	width: 60px;
+	min-width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #d70e29;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sec-2-text p {
+	font-size: 24px;
+	padding-left: 18px;
+}
+
+.sec-2-text h6 {
+	font-size: 40px;
+	font-weight: bold;
+	color: #fff;
+	margin-top: 5px;
+}
+
+.reg-btn-2 {
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 60px;
+}
+
+.reg-btn-2 button {
+	width: 100%;
+	max-width: 360px;
+	height: 48px;
+	background-color: #d70e29;
+	border-radius: 50px;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+	width: 100%;
+	background-color: #5e5e5d;
+}
+
+footer h1 {
+	color: #fff;
+	font-size: 24px;
+	line-height: 24px;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.pop-congratulation {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 3920px;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	top: 0;
+	z-index: 5;
+}
+
+.container-congratulation {
+	margin-top: 42px;
+	width: 800px;
+}
+
+.close {
+	display: flex;
+	justify-content: flex-end;
+	width: 800px;
+	margin-bottom: 33.6px;
+	cursor: pointer;
+}
+
+.congratulation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 800px;
+	border-radius: 50px;
+	background: white;
+	height: 600px;
+}
+
+.header-congratulation {
+	margin-bottom: 30px;
+}
+
+.container-congratulation h1 {
+	font-family: "TT Commons";
+	font-size: 64px;
+	color: #d70e29;
+}
+
+.subtitle {
+	width: 584px;
+	margin-bottom: 6px;
+}
+
+.subtitle p {
+	font-family: "TT Commons";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 30px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #000000;
+}
+
+.choice-img img {
+	width: 280px;
+	height: 203px;
+}
+
+.footer-subtitle {
+	width: 612px;
+	margin-bottom: 42px;
+}
+
+.footer-subtitle p {
+	font-family: "TT Commons";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #5e5e5d;
+}
+
+.pop-up-box {
+	display: none;
+}
+
+.pop-up-rules {
+	display: none;
+}
+
+.pop-up-box.active {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 2920px;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	top: 0;
+	z-index: 5;
+}
+
+.section-modal.active_modal {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background: #ffffff;
+	width: 100%;
+	max-width: 1000px;
+	height: 703px;
+	border-radius: 50px;
+	margin-bottom: 50px;
+	margin-top: 80px;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.h1-modal {
+	font-family: 'TT Commons';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 64px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	color: #D70E29;
+	margin-bottom: 22px;
+}
+
+.h2-modal {
+	font-family: 'TT Commons';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	color: #000000;
+	margin-bottom: 48px;
+}
+
+.modal-reg {
+    margin-top: 100px;
+}
+
+.section-mod {
+    display: flex;
+    flex-direction: row;
+  }
+
+.form {
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+}
+
+.group {
+	position: relative;
+	margin-bottom: 20px;
+	flex-grow: 1;
+	width: 300px;
+}
+
+.input {
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	border: none;
+	border-bottom: 1px solid #757575;
+	background: transparent;
+	width: 100%;
+	outline: none;
+}
+
+.label {
+	color: #999;
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 5px;
+	top: 10px;
+	transition: 0.2s ease all;
+	-moz-transition: 0.2s ease all;
+	-webkit-transition: 0.2s ease all;
+
+	font-family: "TT Commons";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	color: #5e5e5d;
+}
+
+.input:focus ~ label,
+input:valid ~ label {
+	top: -20px;
+	font-size: 14px;
+	color: #99999c;
+}
+
+.label-star {
+	color: red;
+}
+
+.kitten-pop-up  {
+	margin-left: 82px;
+}
+
+.kitten-pop-up img {
+	width: 335px;
+	height: 380px;
+}
+
+.data-person {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.soglasie {
+	cursor: pointer;
+	width: 240px;
+}
+
+.btn-reg-mod {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	justify-content: center;
+	text-align: center;
+	width: 307px;
+	height: 48px;
+	background: #d70e29;
+	border-radius: 100px;
+	cursor: pointer;
+	margin-bottom: 64px;
+	margin-left: -4px;
+}
+
+.btn-reg-mod a {
+	text-decoration: none;
+	font-family: "TT Commons";
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.checkbox {
+	border: 2px solid #D70E29;
+	box-sizing: border-box;
+	border-radius: 5px;
+	width: 35px;
+	height: 35px;
+	margin-right: 25px;
+}
+
+.btn-close {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 1000px;
+	margin-bottom: -32.4px;
+	cursor: pointer;
+}
+
+.select {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #757575;
+    background: transparent;
+}
+
+.pop-up-rules.active {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 2920px;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	top: 0;
+	z-index: 5;
+}
+
+.pop-error {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 3920px;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	top: 0;
+	z-index: 5;
+}
+
+.pop-suc {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 3920px;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	top: 0;
+	z-index: 5;
+}

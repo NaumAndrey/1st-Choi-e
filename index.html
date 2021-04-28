@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My site</title>
+  <!--Styles-->
+  <link rel="stylesheet" href="css/main.css">
+  <!--Adaptive-->
+  <link rel="stylesheet" href="css/media.css">
+  <meta name="viewport" content="width=device-width">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="js/ajax.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+</head>
+<body>
+  <!--Section #1-->
+  
+  <div class="container">
+    <div class="head">
+      <img src="./images/logo-choice.png" alt="">
+      <nav>
+        <a href="">Условия</a>
+        <a href="">Призы</a>
+        <a href="">Правила</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="sec-1">
+    <div class="container">
+      <div class="sec-1-content">
+        <div class="sec-1-img">
+          <img src="./images/kitten.png" alt="">
+        </div>
+        <div>
+          <h1>Зарегистрируйся
+            и <span style="color: red; font-weight: bold;">выигрывай</span></h1>
+          <p><span style="border-bottom: solid 1px red;">Премиум корм</span> для своего питомца
+            и классный <span style="border-bottom: solid 1px red;">мерч от 1st Choiсe</span></p>
+          <div class="reg-btn">
+            <button class="registration">зарегистрироваться</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-2">
+    <div class="container">
+      <div class="sec-2-content">
+        <div>
+          <h1>Условия</h1>
+          <div class="sec-2-text">
+            <div><h6>1</h6></div>
+            <p>Нажми кнопку «Зарегистрироваться» и оставь свои контакты.</p>
+          </div>
+          <div class="sec-2-text">
+            <div><h6>2</h6></div>
+            <p>Выиграй премиум корм для своего питомца
+              и классный мерч от 1st Choiсe.</p>
+          </div>
+          <div class="reg-btn-2">
+            <button class="registration" >зарегистрироваться</button>
+          </div>
+        </div>
+        <div>
+          <img src="./images/present 1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <h1>Пользовательское соглашение</h1>
+      </div>
+    </div>
+  </footer>
+
+  <div class="pop-up-box">
+    <div class="btn-close"><img src="images/close.svg" alt="" /></div>
+    <div class="section-modal">
+      <div class="modal-reg">
+        <div><h1 class="h1-modal">Регистрируйся и выигрывай</h1></div>
+        <div>
+          <h2 class="h2-modal">
+            премиум корм для кошек 1st Choice и классный мерч
+          </h2>
+        </div>
+        <div class="section-mod">
+          <div class="section-modal-window">
+            <div class="">
+              <form class="form" action="#" method="POST">
+                <div class="group">
+                  <input class="input" type="text" required=" " />
+                  <label class="label"
+                    >Ваш город<span class="label-star">*</span></label
+                  >
+                </div>
+                <div class="group">
+                  <input class="input" type="text" required=" " />
+                  <label class="label"
+                    >ФИО<span class="label-star">*</span></label
+                  >
+                </div>
+                <div class="group">
+                  <input id="phone" class="input error" type="tel" name="telephone" required="" maxlength="16" data-validate="" aria-invalid="true">
+                  <label class="label"
+                    >Номер телефона<span class="label-star">*</span></label>
+                  <label id="phone-error" class="error" for="phone">Это поле обязательно для заполнения</label>
+                </div>
+                <div class="group">
+                  <input class="input" type="text" required=" " />
+                  <label class="label"
+                    >E-mail<span class="label-star">*</span></label
+                  >
+                </div>
+                <div class="group">
+                  <select class="select valid" name="pet" aria-invalid="false">
+                      <option value="Собачка">Собачка</option>
+                      <option value="Кошечка">Кошечка</option>
+                  </select>
+                </div>
+                <div class="data-person">
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    name="checkbox1"
+                    value=""
+                  />
+                  <p class="soglasie">
+                    Согласие на обработку персональных данных
+                  </p>
+                </div>
+              </form>
+              <div class="btn-reg-mod">
+                <a href="#">зарегистрироваться</a>
+              </div>
+            </div>
+          </div>
+          <div class="kitten-pop-up">
+            <img src="images/kitten.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--JavaScript-->
+  <script>
+		    
+    //checkbox.addEventListener('change', changeHandler);
+    function changeHandler() {
+        var checkbox = document.getElementById("agree-checkbox");
+    var apply_btn = document.getElementById('submit');
+    if(checkbox.checked) {
+            apply_btn.removeAttribute("disabled");
+        }else{
+            apply_btn.setAttribute("disabled", "disabled");
+        }
+    };
+    
+  </script>
+
+  <script>
+        function changeHandler() {
+            var checkbox = document.getElementById("agree-checkbox");
+        var apply_btn = document.getElementById('submit');
+         if(checkbox.checked) {
+                 apply_btn.removeAttribute("disabled");
+             }else{
+                 apply_btn.setAttribute("disabled", "disabled");
+             }
+        };
+  </script>
+
+  <script src="https://unpkg.com/imask"></script>
+  <script src="js/main.js"></script>
+</body>
+</html> 
+
+
